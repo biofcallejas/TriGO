@@ -1,7 +1,7 @@
-# TriGO (Trichomonas vaginalis GO enrichment analysis)
+# TriGO (*Trichomonas vaginalis* GO enrichment analysis)
 
 GO enrichment analysis for Trichomonas vaginalis using hypergeometric distribution ([LightGOEA](https://github.com/biofcallejas/LightGOEA) function).
-This script was written to calculate GO enrichment for Trichomonas vaginalis datasets. However, the script will work with other species files that meet the input formats.
+This script was written to calculate GO enrichment for *Trichomonas vaginalis* datasets. However, the script will work with other species files that meet the input formats.
 
 ## Installation
 
@@ -16,8 +16,8 @@ The main script does not require installation but has some Python dependencies (
 
 ## GO database
 
-The script also needs the GO database to be available in the working directory. 
-It can be downloaded [here](https://geneontology.org/docs/download-ontology/) (.OBO format: **go.obo**).
+The script needs the [GO database](https://geneontology.org/docs/download-ontology/) (.obo format) to be available in the working directory. 
+It can be downloaded [here](https://geneontology.org/docs/download-ontology/) (**go.obo**).
 
 ## Usage
 
@@ -57,8 +57,12 @@ The output is a seven-column TSV file summarizing the results.
 * **GO_level** GO level; Molecular Function (MF), Cellular Component (CC), Biological Process (BP).
 * **Description** GO name/description.
 * **Enrichment** Enrichment value.
-* **fdr_q_value** False Discover Rate (qvalue)
-* **p_value** P-value
+* **fdr_q_value** False Discover Rate (*q*value)
+* **p_value** *p*-value
 * **genes** Genes enriched with this term
 
+## Additional info
+
+Newer versions of Scipy and Numpy might cause running problems.
+The script was tested on MACOS and UNIX OS.
 
